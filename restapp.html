@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Restaurant App</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <h1 style="text-align: center">Restaurant App</h1>
+
+  <fieldset>
+    <form>
+      <label for="dishprice">Choose Price :</label>
+      <input type="number" id="dishprice" name="dishprice" />
+
+      <label for="dishname"> Choose Dish :</label>
+      <input type="text" id="dishname" name="dishname" />
+
+      <label for="tablenumber"> Choose a Table :</label>
+      <select id="tablenumber" name="tablenumber">
+        <option id="table1" value="table1">Table 1 </option>
+        <option id="table2" value="table2">Table 2 </option>
+        <option id="table3" value="table3">Table 3 </option>
+      </select>
+
+      <input type="submit" value="Add To Bill" id="addtobill" />
+    </form>
+
+  </fieldset>
+
+  <h1 style="color:red; font-size:50px; text-align:center;">Orders</h1>
+
+  <ul style="color:blue; font-size:20px; text-align:left;">Table 1</ul>
+  <ol id="listoforders1"></ol>
+  <ul style="color:blue; font-size:20px; text-align:left;">Table 2</ul>
+  <ol id="listoforders2"></ol>
+  <ul style="color:blue; font-size:20px; text-align:left;">Table 3</ul>
+  <ol id="listoforders3"></ol>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="restapp.js"></script>
+</body>
+
+</html>
